@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../alojamientos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Luis Muños, Rafael Urzeda">
+    <meta name="keywords"
+        content="hotel, alojamiento, alquiler turístico, casa vacacional, apartamento, villa, bungalow, hostal, refugio, camping, albergue, ubicación, destino, región, ciudad, pueblo, playa, montaña, campo, lago, río, monumento, museo, evento, oferta, descuento, promoción, reserva, contacto">
+    <link rel="icon" type="image/x-icon" href="../../img/isla.png">
+    <title>RacoMallorqui.com</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="../../Pagina principal/principal.html">
+                <img src="../../img/RacoMallorqui.png" alt="Logo" height="120px" width="320px" class="logo"></a>
+            <button><a href="../../Cat_Tipo_Muni/Categorias/categorias.html">Categorias</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Municipi/municipi.html">Municipios</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Tipus/tipos.html">Tipos</button></a>
+            <button><a href="../../Pagina principal/principal.html #sobre_nosotros"> Sobre nosotros</button></a>
+            <button><a href="../../Pagina principal/principal.html #contactanos"> Contactanos</button></a>
+        </nav>
+    </header>
+    <section>
+        <!-- TITULO + LINK -->
+        <div class="primerh1">
+            <h1><a href="https://www.jshotels.com/es/js-sol-de-alcudia/" target="_blank">JS Sol de Alcudia</a></h1>
+        </div>
+
+        <!-- FOTOS IZQUIERDA + RESERVA DERECHA -->
+        <div class="div_general">
+            <div class="div_izquierda">
+                <div class="izquierda_izquierda">
+                    <img src="./img_global/comedor.jpg" alt="comedor" width="90%" height="90%" class="imagenes">
+                </div>
+                <div class="izquierda_derecha">
+                    <img src="./img_global/habitacion.jpg" alt="habitacion" width="90%" height="90%" class="imagenes">
+                </div>
+                <div class="abajo">
+                    <img src="./img_global/exterior.jpg" alt="exterior" width="90%" height="90%" class="imagenes">
+                </div>
+            </div>
+            <div class="div_derecha">
+                <div class="div_derecha_pequeño">
+                    <!-- PRECIO POR NOCHE -->
+                    <h1> 89€ / noche</h1>
+                    <form action="https://www.jshotels.com/es/js-sol-de-alcudia/" method="post">
+                        <label for="datellegada">Llegada</label>
+                        <input type="date" id="datellegada" name="datellegada" value="<?php echo date(" Y-m-d");?>
+                        <!--Con este comando de value, pillamos la funcion de date() de php-->
+                        <label for="datesalida">Salida</label>
+                        <input type="date" id="datesalida" name="datesalida" value="<?php echo date(" Y-m-d");?>
+                        <label for="personas">Personas</label>
+                        <input type="number" name="personas" id="personas" max="4" min="1" value="1">
+                    </form>
+                    <!-- AL RESERVAR ENLACE A LA PAGINA WEB DEL ALOJAMIENTO -->
+                    <button class="boton_reserva"><a href="https://www.jshotels.com/es/js-sol-de-alcudia/"
+                            target="_blank">Reservar</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- DESCRIPCION DEL HOTEL -->
+        <div class="descripcion_hotel">
+            <div class="descripcion_hotel_h1">
+                <h1><u>Descripción</u></h1>
+            </div>
+            <div>
+                <p> Con una situación privilegiada en el Puerto de Alcudia, cerca de la playa, la zona de ocio y el Llac
+                    Gran, e impresionantes vistas a los lagos, JS Sol de Alcudia lo tiene todo para enamorarte. Si
+                    buscas unas vacaciones de relax, en su zona wellness podrás desconectar y olvidarte del mundo,
+                    aunque quizá prefieras relajarte haciendo unos largos en la piscina, donde podrás tomar algo
+                    directamente en el agua en la barra del Wet Bar.</p>
+                <p> El ambiente más animado del hotel se encuentra en el 12 to 12 Lounge, especializado en coctelería,
+                    con zona de terraza, piscina y actuaciones directo. Y si eres aficionado al ciclismo, con nuestro
+                    centro ciclista podrás recorrer la isla con tu bici siempre a punto. El hotel dispone de un
+                    restaurante buffet con cenas temáticas y un snack bar</p>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="mapa">
+            <div class="mapah1">
+                <h1><u>Mapa</u></h1>
+            </div>
+            <div class="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12255.402936163107!2d3.1145736!3d39.8327642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12962d64c5895855%3A0x45cdb41efc3cc2fa!2sHotel%20JS%20Sol%20de%20Alc%C3%BAdia!5e0!3m2!1ses!2ses!4v1702146102565!5m2!1ses!2ses"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">Racó Mallorquí</span> by <span property="cc:attributionName">Luis Muñoz Rafael
+                Urzeda</span> is marked with
+            <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

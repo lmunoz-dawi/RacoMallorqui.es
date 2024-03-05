@@ -1,0 +1,322 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0 auto;
+}
+
+p {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Todo los estilos del header y del nav que son la barra de menu superior */
+
+header {
+    background-color: rgb(28, 28, 73);
+    padding: 10px;
+    margin: 0px;
+    background-image: url("../img/fondo_header.jpg");
+}
+
+nav {
+    display: flex;
+    padding: 0.5em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 92, 142);
+    border: 1px solid white;
+    height: 50px;
+    width: 200px;
+    border-radius: 200px;
+    text-decoration: none;
+    padding: 1em;
+    margin: 0 0.5em;
+}
+
+nav button:hover {
+    background-color: rgba(0, 130, 186, 0.357);
+}
+
+nav>button>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.logo {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    from {
+        left: -400px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+.primerh1 {
+    display: flex;
+    text-align: center;
+    color: black;
+    background-color: rgb(5, 92, 142);
+    margin-top: 0;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+
+.div_general {
+    display: flex;
+    width: 100%;
+    background-color: rgb(106, 154, 199);
+}
+
+.div_izquierda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    height: 700px;
+    padding: 20px;
+}
+
+.izquierda_izquierda,
+.izquierda_derecha,
+.abajo {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_derecha {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_derecha_pequeño {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgba(0, 130, 186, 0.357);
+    box-shadow: rgb(106, 106, 199) 0 0 10px;
+    background-color: rgb(175, 175, 211);
+    height: 400px;
+    width: 500px;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.div_derecha_pequeño>button {
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    border-color: blue;
+    background-color: rgb(186, 186, 214);
+    font-size: 20px;
+}
+
+.div_derecha_pequeño>button:hover {
+    background-color: rgb(108, 108, 236);
+    color: wheat;
+}
+
+.div_derecha_pequeño>button:hover>a {
+    color: wheat;
+}
+
+.descripcion_hotel {
+    margin: 50px;
+}
+
+.descripcion_hotel_h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.mapa {
+    background-color: rgb(106, 154, 199);
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.mapah1 {
+    margin-left: 200px;
+    color: white;
+}
+
+.iframe {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+iframe {
+    border: 1px solid white;
+    width: 1500px;
+    height: 450px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: rgb(5, 92, 142);
+    margin: 0;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+}
+
+footer>p>a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+button>a {
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer>p>a>img {
+    height: 22px;
+    margin-left: 3px;
+    align-items: center;
+}
+
+/* RESPONSIVE PARA MOVILES */
+@media screen and (max-width: 390px) and (max-height: 844px) {
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 390px;
+        padding: 0;
+        padding-bottom: 5px;
+    }
+
+    nav {
+        width: 390px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav>button {
+        height: 50px;
+        width: 100px;
+    }
+
+    nav>button>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 390px;
+        height: 150px;
+    }
+
+    .primerh1 {
+        font-size: 10px;
+        width: 390px;
+    }
+
+    .div_general {
+        width: 390px;
+        display: block;
+        padding: 0px;
+    }
+
+    .div_izquierda {
+        width: 390px;
+        display: block;
+        padding: 0px;
+        margin-bottom: 200px;
+    }
+
+    .izquierda_izquierda,
+    .izquierda_derecha,
+    .abajo {
+        width: 390px;
+        height: 300px;
+    }
+
+    .div_derecha {
+        display: flex;
+        width: 390px;
+        padding-bottom: 10px;
+    }
+
+    .div_derecha_pequeño {
+        height: 200px;
+        width: 250px;
+        padding: 5%;
+    }
+
+    .div_derecha_pequeño>form {
+        width: 200px;
+    }
+
+    .div_derecha_pequeño>button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .descripcion_hotel {
+        margin: 0px;
+        width: 390px;
+    }
+
+    .mapa {
+        width: 390px;
+    }
+
+    .mapah1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    iframe {
+        width: 370px;
+        height: 400px;
+    }
+
+    footer {
+        width: 390px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    footer>p>a>img {
+        height: 15px;
+    }
+}
