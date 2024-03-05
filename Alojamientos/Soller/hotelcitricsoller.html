@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../alojamientos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Luis Muños, Rafael Urzeda">
+    <meta name="keywords"
+        content="hotel, alojamiento, alquiler turístico, casa vacacional, apartamento, villa, bungalow, hostal, refugio, camping, albergue, ubicación, destino, región, ciudad, pueblo, playa, montaña, campo, lago, río, monumento, museo, evento, oferta, descuento, promoción, reserva, contacto">
+    <link rel="icon" type="image/x-icon" href="../../img/isla.png">
+    <title>RacoMallorqui.com</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="../../Pagina principal/principal.html">
+                <img src="../../img/RacoMallorqui.png" alt="Logo" height="120px" width="320px" class="logo"></a>
+            <button><a href="../../Cat_Tipo_Muni/Categorias/categorias.html">Categorias</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Municipi/municipi.html">Municipios</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Tipus/tipos.html">Tipos</button></a>
+            <button><a href="../../Pagina principal/principal.html #sobre_nosotros"> Sobre nosotros</button></a>
+            <button><a href="../../Pagina principal/principal.html #contactanos"> Contactanos</button></a>
+        </nav>
+    </header>
+    <section>
+        <!-- TITULO + LINK -->
+        <div class="primerh1">
+            <h1><a href="https://citrichotels.com/es/" target="_blank">Hotel Critic Soller</a></h1>
+        </div>
+
+        <!-- FOTOS IZQUIERDA + RESERVA DERECHA -->
+        <div class="div_general">
+            <div class="div_izquierda">
+                <div class="izquierda_izquierda">
+                    <img src="./img_hotelcitricsoller/habitacion.jpg" alt="habitacion" width="90%" height="90%"
+                        class="imagenes">
+                </div>
+                <div class="izquierda_derecha">
+                    <img src="./img_hotelcitricsoller/terraza.jpg" alt="terraza" width="90%" height="90%"
+                        class="imagenes">
+                </div>
+                <div class="abajo">
+                    <img src="./img_hotelcitricsoller/fachada.jpg" alt="fachada" width="90%" height="90%"
+                        class="imagenes">
+                </div>
+            </div>
+            <div class="div_derecha">
+                <div class="div_derecha_pequeño">
+                    <!-- PRECIO POR NOCHE -->
+                    <h1> 87€ / noche</h1>
+                    <form action="https://citrichotels.com/es/" method="post">
+                        <label for="datellegada">Llegada</label>
+                        <input type="date" id="datellegada" name="datellegada" value="<?php echo date(" Y-m-d");?>
+                        <!--Con este comando de value, pillamos la funcion de date() de php-->
+                        <label for="datesalida">Salida</label>
+                        <input type="date" id="datesalida" name="datesalida" value="<?php echo date(" Y-m-d");?>
+                        <label for="personas">Personas</label>
+                        <input type="number" name="personas" id="personas" max="4" min="1" value="1">
+                    </form>
+                    <!-- AL RESERVAR ENLACE A LA PAGINA WEB DEL ALOJAMIENTO -->
+                    <button class="boton_reserva"><a href="https://citrichotels.com/es/"
+                            target="_blank">Reservar</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- DESCRIPCION DEL HOTEL -->
+        <div class="descripcion_hotel">
+            <div class="descripcion_hotel_h1">
+                <h1><u>Descripción</u></h1>
+            </div>
+            <div>
+                <p> El Hotel Citric Sóller en Mallorca, es un acogedor, atractivo, sencillo, práctico y económico hotel
+                    de 46 habitaciones en primera línea del mar del Puerto de Sóller. El hall y habitaciones están
+                    redecoradas con sencillez y estilo, todas ellas con baño completo y la mayoría con amplios
+                    ventanales y balcón con maravillosas vistas al mar o montaña, y junto a la playa. El hotel perfecto
+                    para tus vacaciones en el Puerto de Sóller y para los amantes del deporte y la naturaleza.</p>
+                <p> Citric ofrece un ambiente cálido y agradable, un trato excelente y una ubicación perfecta.
+                    Restaurante con buenos menús y muy buen precio. La terraza es un buen lugar para relajarse tomarse
+                    un vino y leer un buen libro.</p>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="mapa">
+            <div class="mapah1">
+                <h1><u>Mapa</u></h1>
+            </div>
+            <div class="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12262.592071715006!2d2.6902263!3d39.7924538!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297e5fa45e49441%3A0xc7442e203f471725!2sCitric%20Hotel%20S%C3%B3ller!5e0!3m2!1ses!2ses!4v1702148597770!5m2!1ses!2ses"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">Racó Mallorquí</span> by <span property="cc:attributionName">Luis Muñoz Rafael
+                Urzeda</span> is marked with
+            <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

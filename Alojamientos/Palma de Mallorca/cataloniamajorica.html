@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../alojamientos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Luis Muños, Rafael Urzeda">
+    <meta name="keywords"
+        content="hotel, alojamiento, alquiler turístico, casa vacacional, apartamento, villa, bungalow, hostal, refugio, camping, albergue, ubicación, destino, región, ciudad, pueblo, playa, montaña, campo, lago, río, monumento, museo, evento, oferta, descuento, promoción, reserva, contacto">
+    <link rel="icon" type="image/x-icon" href="../../img/isla.png">
+    <title>RacoMallorqui.com</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="../../Pagina principal/principal.html">
+                <img src="../../img/RacoMallorqui.png" alt="Logo" height="120px" width="320px" class="logo"></a>
+            <button><a href="../../Cat_Tipo_Muni/Categorias/categorias.html">Categorias</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Municipi/municipi.html">Municipios</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Tipus/tipos.html">Tipos</button></a>
+            <button><a href="../../Pagina principal/principal.html #sobre_nosotros"> Sobre nosotros</button></a>
+            <button><a href="../../Pagina principal/principal.html #contactanos"> Contactanos</button></a>
+        </nav>
+    </header>
+    <section>
+        <!-- TITULO + LINK -->
+        <div class="primerh1">
+            <h1><a href="https://www.cataloniahotels.com/es/hotel/catalonia-majorica?mb=1" target="_blank">Catalonia
+                    Majorica</a></h1>
+        </div>
+
+        <!-- FOTOS IZQUIERDA + RESERVA DERECHA -->
+        <div class="div_general">
+            <div class="div_izquierda">
+                <div class="izquierda_izquierda">
+                    <img src="./img_catalonia/habitacion.jpg" alt="habitacion" width="90%" height="90%"
+                        class="imagenes">
+                </div>
+                <div class="izquierda_derecha">
+                    <img src="./img_catalonia/hotel_afuera.jpg" alt="hotel_afuera" width="90%" height="90%"
+                        class="imagenes">
+                </div>
+                <div class="abajo">
+                    <img src="./img_catalonia/piscina.jpg" alt="piscina" width="90%" height="90%" class="imagenes">
+                </div>
+            </div>
+            <div class="div_derecha">
+                <div class="div_derecha_pequeño">
+                    <!-- PRECIO POR NOCHE -->
+                    <h1>72€ / noche</h1>
+                    <form
+                        action="https://www.iberostar.com/en/hotels/majorca/iberostar-playa-de-palma/?utm_source=google&utm_medium=organic&utm_campaign=IBSVOL_EMEA_SEOLOC_GMB_NA_EN_ESP_BAL_PMI_PDP_PULL_NA_NA_NA_NA_NA"
+                        method="post">
+                        <label for="datellegada">Llegada</label>
+                        <input type="date" id="datellegada" name="datellegada" value="<?php echo date(" Y-m-d");?>
+                        <!--Con este comando de value, pillamos la funcion de date() de php-->
+                        <label for="datesalida">Salida</label>
+                        <input type="date" id="datesalida" name="datesalida" value="<?php echo date(" Y-m-d");?>
+                        <label for="personas">Personas</label>
+                        <input type="number" name="personas" id="personas" max="4" min="1" value="1">
+                    </form>
+                    <!-- AL RESERVAR ENLACE A LA PAGINA WEB DEL ALOJAMIENTO -->
+                    <button class="boton_reserva"><a
+                            href="https://www.iberostar.com/en/hotels/majorca/iberostar-playa-de-palma/?utm_source=google&utm_medium=organic&utm_campaign=IBSVOL_EMEA_SEOLOC_GMB_NA_EN_ESP_BAL_PMI_PDP_PULL_NA_NA_NA_NA_NA"
+                            target="_blank">Reservar</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- DESCRIPCION DEL HOTEL -->
+        <div class="descripcion_hotel">
+            <div class="descripcion_hotel_h1">
+                <h1><u>Descripción</u></h1>
+            </div>
+            <div>
+                <p>La búsqueda del hotel para familias ideal en Palma de Mallorca no tiene por qué ser complicada.
+                    Bienvenido a Catalonia Majorica Hotel, una fantástica opción para viajeros como tú. Durante su
+                    estancia en Catalonia Majorica Hotel, los huéspedes pueden visitar Llotja (2,3 km) y Palau de
+                    l'Almudaina (2,5 km), que son algunas de las principales atracciones de Palma de Mallorca.</p>
+                <p>Hotel Catalonia Majorica es un hotel para familias con televisor de pantalla plana, minibar y aire
+                    acondicionado en las habitaciones, y es fácil permanecer conectado durante la estancia, ya que
+                    ofrece wifi gratuito para los huéspedes. El hotel tiene recepción abierta 24 horas, conserje y
+                    servicio de habitaciones. Además, los huéspedes pueden disfrutar de piscina y desayuno, lo que lo ha
+                    convertido en una opción popular entre los viajeros que visitan Palma de Mallorca.</p>
+                <p>Si buscas unos restaurantes de sushi, considera probar Mercado Gastronómico San Juan, Mercat 1930 o
+                    Restaurante Japones Shogun, que se encuentran muy cerca de Hotel Catalonia Majorica. Si te interesa
+                    explorar Palma de Mallorca, visita edificios gubernamentales como Consolat de Mar, Can Bordils y
+                    Palau de Congressos de Palma de Mallorca. Catalonia Majorica Hotel está deseando darte la bienvenida
+                    cuando visites Palma de Mallorca.</p>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="mapa">
+            <div class="mapah1">
+                <h1><u>Mapa</u></h1>
+            </div>
+            <div class="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3076.150390493858!2d2.61973817639529!3d39.556216407562495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297920bc684ea81%3A0xa6a429d97f545f11!2sCarrer%20de%20la%20Garita%2C%203%2C%2007015%20Palma%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1702066039770!5m2!1ses!2ses"
+                    width="1500" height="450" style="border:1;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">Racó Mallorquí</span> by <span property="cc:attributionName">Luis Muñoz Rafael
+                Urzeda</span> is marked with
+            <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

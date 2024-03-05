@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../alojamientos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Luis Muños, Rafael Urzeda">
+    <meta name="keywords"
+        content="hotel, alojamiento, alquiler turístico, casa vacacional, apartamento, villa, bungalow, hostal, refugio, camping, albergue, ubicación, destino, región, ciudad, pueblo, playa, montaña, campo, lago, río, monumento, museo, evento, oferta, descuento, promoción, reserva, contacto">
+    <link rel="icon" type="image/x-icon" href="../../img/isla.png">
+    <title>RacoMallorqui.com</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="../../Pagina principal/principal.html">
+                <img src="../../img/RacoMallorqui.png" alt="Logo" height="120px" width="320px" class="logo"></a>
+            <button><a href="../../Cat_Tipo_Muni/Categorias/categorias.html">Categorias</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Municipi/municipi.html">Municipios</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Tipus/tipos.html">Tipos</button></a>
+            <button><a href="../../Pagina principal/principal.html #sobre_nosotros"> Sobre nosotros</button></a>
+            <button><a href="../../Pagina principal/principal.html #contactanos"> Contactanos</button></a>
+        </nav>
+    </header>
+    <section>
+        <!-- TITULO + LINK -->
+        <div class="primerh1">
+            <h1><a href="https://www.iberostar.com/en/hotels/majorca/iberostar-playa-de-palma/?utm_source=google&utm_medium=organic&utm_campaign=IBSVOL_EMEA_SEOLOC_GMB_NA_EN_ESP_BAL_PMI_PDP_PULL_NA_NA_NA_NA_NA"
+                    target="_blank">Iberostar Selection Playa de Palma</a></h1>
+        </div>
+
+        <!-- FOTOS IZQUIERDA + RESERVA DERECHA -->
+        <div class="div_general">
+            <div class="div_izquierda">
+                <div class="izquierda_izquierda">
+                    <img src="./img_iberostar/exterior_hotel.jpg" alt="exterior_hotel" width="90%" height="90%"
+                        class="imagenes">
+                </div>
+                <div class="izquierda_derecha">
+                    <img src="./img_iberostar/interior_habitacion.jpg" alt="interior_habitacion" width="90%"
+                        height="90%" class="imagenes">
+                </div>
+                <div class="abajo">
+                    <img src="./img_iberostar/Interior_hotel.jpg" alt="Interior_hotel" width="90%" height="90%"
+                        class="imagenes">
+                </div>
+            </div>
+            <div class="div_derecha">
+                <div class="div_derecha_pequeño">
+                    <h1>123€ / noche</h1>
+                    <form
+                        action="https://www.iberostar.com/en/hotels/majorca/iberostar-playa-de-palma/?utm_source=google&utm_medium=organic&utm_campaign=IBSVOL_EMEA_SEOLOC_GMB_NA_EN_ESP_BAL_PMI_PDP_PULL_NA_NA_NA_NA_NA"
+                        method="post">
+                        <label for="datellegada">Llegada</label>
+                        <input type="date" id="datellegada" name="datellegada" value="<?php echo date(" Y-m-d");?>
+                        <!--Con este comando de value, pillamos la funcion de date() de php-->
+                        <label for="datesalida">Salida</label>
+                        <input type="date" id="datesalida" name="datesalida" value="<?php echo date(" Y-m-d");?>
+                        <label for="personas">Personas</label>
+                        <input type="number" name="personas" id="personas" max="4" min="1" value="1">
+                    </form>
+                    <!-- AL RESERVAR ENLACE A LA PAGINA WEB DEL ALOJAMIENTO -->
+                    <button class="boton_reserva"><a
+                            href="https://www.iberostar.com/en/hotels/majorca/iberostar-playa-de-palma/?utm_source=google&utm_medium=organic&utm_campaign=IBSVOL_EMEA_SEOLOC_GMB_NA_EN_ESP_BAL_PMI_PDP_PULL_NA_NA_NA_NA_NA"
+                            target="_blank">Reservar</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- DESCRIPCION DEL HOTEL -->
+        <div class="descripcion_hotel">
+            <div class="descripcion_hotel_h1">
+                <h1><u>Descripción</u></h1>
+            </div>
+            <div>
+                <p>El reformado Iberostar Selection Playa de Palma es un excitante hotel para adultos y parejas. Por su
+                    ubicación a sólo 10 minutos de Palma no sólo asegura todas las experiencias que esta vibrante ciudad
+                    posee, sino que además permite disfrutar de la mejor zona de la Playa de Palma. Sus habitaciones y
+                    suites totalmente renovadas para ofrecer una experiencia de confort superior son el aperitivo de una
+                    oferta de servicios e instalaciones de muy alta calidad, que incluye el servicio Star Prestige con
+                    zona VIP para adultos con solárium y piscina infinity en la azotea o check out tardío entre otras
+                    amenidades de lujo. Le invitamos a saborear los vinos de la Bodega Playa Blanca, así como sus dos
+                    animados bares y el restaurante buffet. Y además en el hotel Playa de Palma también podrá realizar
+                    fascinantes talleres, vivir veladas magníficas con la animación del hotel, gozar de wifi premium
+                    incluida, relajarse con tratamientos corporales, faciales y de belleza o realizar un circuito termal
+                    con sauna, ducha escocesa, ducha de sensaciones, baño de vapor… de todo para recuperar energías.
+                    “Wave of change” es un movimiento pionero de grupo Iberostar que apuesta por la eliminación de
+                    plásticos, el fomento del consumo responsable de pescado y la mejora de la salud costera.</p>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="mapa">
+            <div class="mapah1">
+                <h1><u>Mapa</u></h1>
+            </div>
+            <div class="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1829.9420616252676!2d2.7362879405817457!3d39.52389040545378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129796627670738f%3A0xea184f20c8e469fa!2sCarrer%20de%20Marbella%2C%2036%2C%2007610%20Palma%2C%20Illes%20Balears!5e0!3m2!1ses!2ses!4v1701986696459!5m2!1ses!2ses"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">Racó Mallorquí</span> by <span property="cc:attributionName">Luis Muñoz Rafael
+                Urzeda</span> is marked with
+            <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>

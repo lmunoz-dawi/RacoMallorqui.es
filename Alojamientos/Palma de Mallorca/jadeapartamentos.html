@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../alojamientos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Luis Muños, Rafael Urzeda">
+    <meta name="keywords"
+        content="hotel, alojamiento, alquiler turístico, casa vacacional, apartamento, villa, bungalow, hostal, refugio, camping, albergue, ubicación, destino, región, ciudad, pueblo, playa, montaña, campo, lago, río, monumento, museo, evento, oferta, descuento, promoción, reserva, contacto">
+    <link rel="icon" type="image/x-icon" href="../../img/isla.png">
+    <title>RacoMallorqui.com</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="../../Pagina principal/principal.html">
+                <img src="../../img/RacoMallorqui.png" alt="Logo" height="120px" width="320px" class="logo"></a>
+            <button><a href="../../Cat_Tipo_Muni/Categorias/categorias.html">Categorias</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Municipi/municipi.html">Municipios</button></a>
+            <button><a href="../../Cat_Tipo_Muni/Tipus/tipos.html">Tipos</button></a>
+            <button><a href="../../Pagina principal/principal.html #sobre_nosotros"> Sobre nosotros</button></a>
+            <button><a href="../../Pagina principal/principal.html #contactanos"> Contactanos</button></a>
+        </nav>
+    </header>
+    <section>
+        <!-- TITULO + LINK -->
+        <div class="primerh1">
+            <h1><a href="https://www.apartamentosjade.com/es/" target="_blank">Jade Apartamentos</a></h1>
+        </div>
+
+        <!-- FOTOS IZQUIERDA + RESERVA DERECHA -->
+        <div class="div_general">
+            <div class="div_izquierda">
+                <div class="izquierda_izquierda">
+                    <img src="./img_jade/piscinas.jpg" alt="piscinas" width="90%" height="90%" class="imagenes">
+                </div>
+                <div class="izquierda_derecha">
+                    <img src="./img_jade/apartamento.jpg" alt="apartamentos" width="90%" height="90%" class="imagenes">
+                </div>
+                <div class="abajo">
+                    <img src="./img_jade/suite.jpg" alt="suite" width="90%" height="90%" class="imagenes">
+                </div>
+            </div>
+            <div class="div_derecha">
+                <div class="div_derecha_pequeño">
+                    <!-- PRECIO POR NOCHE -->
+                    <h1>73€ / noche</h1>
+                    <form action="https://www.apartamentosjade.com/es/" method="post">
+                        <label for="datellegada">Llegada</label>
+                        <input type="date" id="datellegada" name="datellegada" value="<?php echo date(" Y-m-d");?>
+                        <!--Con este comando de value, pillamos la funcion de date() de php-->
+                        <label for="datesalida">Salida</label>
+                        <input type="date" id="datesalida" name="datesalida" value="<?php echo date(" Y-m-d");?>
+                        <label for="personas">Personas</label>
+                        <input type="number" name="personas" id="personas" max="4" min="1" value="1">
+                    </form>
+                    <!-- AL RESERVAR ENLACE A LA PAGINA WEB DEL ALOJAMIENTO -->
+                    <button class="boton_reserva"><a href="https://www.apartamentosjade.com/es/"
+                            target="_blank">Reservar</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- DESCRIPCION DEL HOTEL -->
+        <div class="descripcion_hotel">
+            <div class="descripcion_hotel_h1">
+                <h1><u>Descripción</u></h1>
+            </div>
+            <div>
+                <p> Los Apartamentos Jade son un complejo de apartamentos de 120 unidades situado en la localidad
+                    costera de Playa de Palma, en la isla de Mallorca. El complejo está gestionado por la cadena
+                    hotelera Playa Golf y ofrece una amplia gama de servicios y comodidades para que sus huéspedes
+                    disfruten de una estancia cómoda y relajante.</p>
+                <p> Están situados a pocos pasos de la playa de Playa de Palma, una de las playas más populares de
+                    Mallorca. El complejo también está cerca de una amplia gama de tiendas, restaurantes y bares.</p>
+                <p> Los Apartamentos Jade ofrecen una amplia gama de apartamentos para elegir, desde apartamentos de una
+                    habitación hasta apartamentos de tres habitaciones. Todos los apartamentos están equipados con todo
+                    lo necesario para una estancia cómoda y relajante.</p>
+            </div>
+        </div>
+
+        <!-- MAPA -->
+        <div class="mapa">
+            <div class="mapah1">
+                <h1><u>Mapa</u></h1>
+            </div>
+            <div class="iframe">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12311.600462717697!2d2.7474407!3d39.516744!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12979667f28a9f93%3A0xde31c98d47e3505f!2sApartamentos%20Jade!5e0!3m2!1ses!2ses!4v1702120715298!5m2!1ses!2ses"
+                    allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </section>
+    <footer>
+        <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+            <span property="dct:title">Racó Mallorquí</span> by <span property="cc:attributionName">Luis Muñoz Rafael
+                Urzeda</span> is marked with
+            <a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank"
+                rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0
+                <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                <img src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1">
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
